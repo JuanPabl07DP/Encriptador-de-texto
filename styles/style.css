@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&display=swap');
+
+:root{
+    --color-primario: #000000;
+    --color-secundario: #0A3871;
+    --color-terciario: #FFFFFF;
+    --color-cuartario: #343A40;
+    --color-quinto: #C7E3E5;
+    --fuente-title: 'Montserrat', sans-serif;
+}
+* {
+    padding: 0;
+    margin:0;
+}
+.body{
+    box-sizing: border-box;
+    background-color: var(--color-quinto);
+}
+.header{
+    display: flex;
+    padding: 10px;
+    background-color: #BDDFEF;
+    height: 35px;
+}
+.title{
+    font-family: var(--fuente-title);
+    color: var(--color-secundario);
+}
+.presentation__input{
+
+}
+.input {
+    background-color: var(--color-quinto);
+    font-family: var(--fuente-title);
+    font-weight: 400;
+    font-size: 32px;
+    resize: none;
+    border: none;
+    color: var(--color-secundario);
+    margin-top: 0px;
+    text-transform: none;
+    width: 658px;
+    height: auto;
+}
+
+.presentation__input__alert {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-cuartario);
+    display: none;
+    gap: 5px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.logo__alert {
+    width: 20px;
+    height: auto;
+}
+
+#alert-text {
+    margin-left: 5px;
+}
+.presentation__input__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.button1, .button2 {
+    width: 328px;
+    height: 67px;
+    border-radius: 37px;
+    font-family: var(--fuente-title);
+    font-size: 16px;
+    border: 2px solid var(--color-secundario);
+}
+
+.button1 {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+.button2 {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+}
+
+
+.presentation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.presentation__input {
+    width: 50%;
+}
+
+.presentation__output {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.rectangle {
+    width: 400px;
+    height: auto;
+    background-color: var(--color-terciario);
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.button-copy {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--color-quinto);
+    font-family: var(--fuente-title);
+    color: var(--color-secundario);
+    font-size: 16px;
+    border: 2px solid var(--color-secundario);
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.image {
+    width: 336px;
+    height: 304px;
+    margin-bottom: 32px;
+}
+
+.bold-text {
+    font-family: var(--fuente-title);
+    font-size: 24px;
+    color: var(--color-cuartario);
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-family: var(--fuente-title);
+    font-size: 16px;
+    color: var(--color-cuartario);
+}
+
+.footer {
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fuente-title);
+    color: var(--color-secundario);
+    background-color: #BDDFEF;
+    display: flex;
+    gap: 30px;
+}
+
+.imgGit{
+    width: 30px;
+    height: auto;
+}
