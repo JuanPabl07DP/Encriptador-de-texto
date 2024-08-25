@@ -12,9 +12,11 @@
     padding: 0;
     margin:0;
 }
-.body{
-    box-sizing: border-box;
+body {
     background-color: var(--color-quinto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .header{
     display: flex;
@@ -33,7 +35,7 @@
     background-color: var(--color-quinto);
     font-family: var(--fuente-title);
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     resize: none;
     border: none;
     color: var(--color-secundario);
@@ -44,7 +46,7 @@
 }
 
 .presentation__input__alert {
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: 600;
     color: var(--color-cuartario);
     display: none;
@@ -73,7 +75,7 @@
     height: 67px;
     border-radius: 37px;
     font-family: var(--fuente-title);
-    font-size: 16px;
+    font-size: 1rem;
     border: 2px solid var(--color-secundario);
 }
 
@@ -92,6 +94,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    flex: 1;
 }
 
 .presentation__input {
@@ -122,7 +125,7 @@
     background-color: var(--color-quinto);
     font-family: var(--fuente-title);
     color: var(--color-secundario);
-    font-size: 16px;
+    font-size: 1rem;
     border: 2px solid var(--color-secundario);
     margin-top: 20px;
     cursor: pointer;
@@ -139,14 +142,14 @@
 
 .bold-text {
     font-family: var(--fuente-title);
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--color-cuartario);
     margin-bottom: 10px;
 }
 
 .paragraph {
     font-family: var(--fuente-title);
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--color-cuartario);
 }
 
@@ -166,4 +169,65 @@
 .imgGit{
     width: 30px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .presentation-wrapper {
+        flex-direction: column;
+    }
+
+    .input {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    .button1, .button2 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .rectangle {
+        max-width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .input {
+        font-size: 1.25rem;
+    }
+
+    .button1, .button2 {
+        font-size: 0.875rem;
+    }
+
+    .bold-text {
+        font-size: 1.25rem;
+    }
+
+    .paragraph {
+        font-size: 0.875rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
+    .imgGit {
+        width: 25px;
+    }
 }
