@@ -194,6 +194,16 @@ body {
 
     .rectangle {
         max-width: 100%;
+        position: relative;
+        padding-bottom: 400px;
+    }
+
+    .button-copy {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 10px;
     }
 
     .image {
